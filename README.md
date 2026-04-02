@@ -8,26 +8,6 @@
 ![Hardware](https://img.shields.io/badge/hardware-open--source-blue)
 ![Platform](https://img.shields.io/badge/platform-ESP32--S3-green)
 
----
-
-
-<p align="center">
-  <img src="./assets/hero.png" alt="Keero Bot Hardware" width="100%" />
-</p>
-
-<p align="center">
-  <a href="https://www.pcbway.com/">
-    <img src="https://img.shields.io/badge/Sponsored%20by-PCBWay-red?style=for-the-badge" alt="Sponsored by PCBWay" />
-  </a>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/status-in%20development-orange" alt="Status" />
-  <img src="https://img.shields.io/badge/hardware-open--source-blue" alt="Open Source Hardware" />
-  <img src="https://img.shields.io/badge/platform-ESP32--S3-green" alt="Platform ESP32-S3" />
-</p>
-
----
 
 The Keero Bot hardware platform is a modular, open-source embedded system designed for building AI-powered devices.
 
@@ -61,7 +41,7 @@ keero-hardware/
 │   ├── tracks/
 │   └── ...
 
-
+```
 
 ---
 
@@ -163,11 +143,6 @@ Render images and (later) real photos can be found in each module folder.
 - Easy reproducibility for the community  
 - Integration with AI-driven firmware  
 
----
-
-## 📄 License
-
-This project is open-source hardware.
 
 ---
 
