@@ -150,4 +150,4 @@ Render images and (later) real photos can be found in each module folder.
 
 Keero is focused on building experimental AI-driven hardware platforms that combine embedded systems with real-world interaction.
 
-![PCBWay](./assets/pcbway.png)
+![PCBWay](./assets/pcbway.jpeg)
