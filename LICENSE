@@ -1,0 +1,66 @@
+Keero Bot Hardware License (KBHL) v1.0
+
+Copyright (c) 2026 Jakša Tomović (Keero)
+
+Permission is hereby granted to use, study, modify, and reproduce this hardware design for personal, educational, and non-commercial purposes.
+
+---
+
+1. Attribution
+
+Any use, modification, or redistribution of this project must include clear and visible attribution:
+
+"Based on Keero Bot hardware by Jakša Tomović (Keero)"
+
+---
+
+2. Non-Commercial Use
+
+This project may NOT be used for commercial purposes without explicit written permission from the author.
+
+Commercial use includes, but is not limited to:
+- Selling hardware based on this design
+- Using the design in a commercial product
+- Offering services or products derived from this design
+
+---
+
+3. Modifications
+
+You are allowed to modify this project, but:
+- You must clearly state changes
+- You must retain attribution
+- Modified versions must include this license
+
+---
+
+4. Distribution
+
+You may redistribute this project under the following conditions:
+- This license must be included
+- Attribution must be preserved
+- No commercial use is allowed without permission
+
+---
+
+5. No Warranty
+
+This project is provided "as is", without warranty of any kind.
+
+---
+
+6. Commercial Licensing
+
+If you are interested in using this project commercially, please contact:
+
+jaksa.tomovic@gmail.com
+
+---
+
+7. Sponsorship Acknowledgement
+
+This project has been supported by PCBWay in the prototyping phase.
+
+---
+
+END OF LICENSE
