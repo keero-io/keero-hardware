@@ -1,7 +1,5 @@
 # Keero Bot Modules
 
-![Modules](../assets/modules.png)
-
 ![Status](https://img.shields.io/badge/status-in%20development-orange)
 ![Type](https://img.shields.io/badge/system-modular-blue)
 
