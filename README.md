@@ -1,153 +1,87 @@
-# Keero Bot – Hardware
+# Keero Bot Hardware
 
 ![Keero Bot](./assets/hero.png)
 
 [![PCBWay Sponsorship](https://img.shields.io/badge/Sponsored%20by-PCBWay-red?style=for-the-badge&logo=pcbway)](https://www.pcbway.com/)
 
-![Status](https://img.shields.io/badge/status-in%20development-orange)
-![Hardware](https://img.shields.io/badge/hardware-open--source-blue)
+![Status](https://img.shields.io/badge/status-active%20prototype-orange)
+![Hardware](https://img.shields.io/badge/hardware-partially%20open-blue)
 ![Platform](https://img.shields.io/badge/platform-ESP32--S3-green)
 
+The Keero Bot hardware platform is a modular embedded system for AI-oriented physical devices. It combines a reusable ESP32-S3 based mainboard with future-facing modules for docking, mobility, and richer interaction experiments.
 
-The Keero Bot hardware platform is a modular, open-source embedded system designed for building AI-powered devices.
+## Project Overview
 
-This repository contains all hardware designs for the Keero ecosystem, including the mainboard and all supporting modules.
+Keero Bot is being developed around a simple product idea:
 
----
+- one compact core board
+- multiple physical configurations through modules
+- open firmware direction
+- public architecture visibility
+- controlled access to production-grade hardware data
 
-## 🚀 Project Overview
+This repository documents the hardware direction and platform structure without positioning the public release as a turnkey cloning package.
 
-Keero Bot is built as a **modular AI hardware platform** that combines:
-
-- Processing (ESP32-S3)
-- Vision (camera)
-- Audio (input/output)
-- Haptics
-- Motion sensing
-- Power management
-- Expandable hardware modules
-
-The goal is to provide a **fully reproducible and extensible open hardware system** for developers, makers, and experimental AI projects.
-
----
-
-## 📦 Repository Structure
+## Repository Structure
 
 ```text
 keero-hardware/
 ├── mainboard/
 ├── modules/
-│   ├── dock/
-│   ├── tracks/
-│   └── ...
-
+└── assets/
 ```
 
----
+## Mainboard
 
-## 🧠 Mainboard
+The mainboard is the central hardware layer of the platform. It combines:
 
-The central board that integrates all core functionality:
+- ESP32-S3 based compute
+- camera, audio, haptics, and motion-oriented interaction support
+- managed power for portable and docked use cases
+- expansion interfaces for external modules
 
-- ESP32-S3
-- Camera interface (OV2640)
-- OLED display interface
-- Audio system (mic + speaker)
-- Haptics driver
-- Accelerometer
-- AXP2101 PMIC power system
-- Magnetic pogo pins (UART + charging)
+See: `mainboard/README.md`
 
-👉 See: `mainboard/README.md`
+## Modules
 
----
+Keero Bot is designed as a modular system rather than a fixed one-board product. Current module directions include:
 
-## 🔌 Modules
+- dock
+- tracks
+- future accessory concepts
 
-External boards that extend the system:
+See: `modules/README.md`
 
-- Dock (charging / development base)
-- Tracks (mobility system)
-- Future expansion modules
+## Manufacturing and Prototyping
 
-👉 See: `modules/README.md`
+The hardware has been prepared with real-world PCB prototyping in mind, which makes it suitable for sponsor review and manufacturing discussion.
 
----
+At the same time, this public repository is intentionally selective. Production-critical design sources and full manufacturing release materials are not positioned here as unrestricted public deliverables.
 
-## 🛠 Included Files
+## Open Hardware Position
 
-Each hardware module contains:
+Keero Bot follows a balanced release model:
 
-- 📄 Schematic (PDF)
-- 🧩 PCB layout renders
-- 📦 Gerber files (ready for manufacturing)
-- 📋 BOM (Bill of Materials)
-- 🧭 Pick & Place (CPL)
-- 🛠 EasyEDA source files (when available)
+- architecture is documented publicly
+- firmware direction remains open
+- official hardware production details are more controlled
 
-This ensures that the project is fully **open, reproducible, and manufacturable**.
+This keeps the project open enough to understand and collaborate around, while reducing the risk of straightforward commercial copying of the official hardware.
 
----
+## PCBWay
 
-## 🤝 Sponsored by PCBWay
+PCBWay is an especially relevant partner for a project like Keero Bot because the platform benefits from reliable prototyping, fast iteration, and professional PCB manufacturing support.
 
-This project is proudly supported by **PCBWay**, who are sponsoring PCB fabrication and helping bring this hardware to life.
+That partner fit helps communicate that Keero Bot is more than a concept. It is a serious hardware platform moving through real prototyping stages.
 
-Working with PCBWay has been an excellent experience:
+## Status
 
-- ⭐ Excellent PCB quality — clean finishes and precise manufacturing  
-- ⚡ Fast turnaround times, even for complex designs  
-- 🔧 Reliable PCBA service with accurate component placement  
-- 📦 Well-packaged deliveries — everything arrived in perfect condition  
-- 💬 Very helpful and responsive support team  
+- Mainboard: active prototype
+- Dock: concept and integration direction defined
+- Tracks: mechanical and firmware direction in progress
 
-Their service made the transition from design to real hardware extremely smooth.
+## About Keero
 
-If you're working on embedded or open hardware projects, PCBWay is a highly recommended choice for both **PCB fabrication and assembly (PCBA)**.
-
-Huge thanks to PCBWay for supporting this project 🙌
-
----
-
-## 🧪 Manufacturing
-
-The boards in this repository are designed for standard PCB + PCBA workflows:
-
-1. Upload Gerber files for PCB fabrication  
-2. Upload BOM + Pick & Place for assembly  
-3. Select components (LCSC or custom sourcing)  
-4. Order assembled boards  
-
-All boards in this project are optimized for manufacturing via PCBWay.
-
----
-
-## 📸 Previews
-
-Render images and (later) real photos can be found in each module folder.
-
----
-
-## 📊 Status
-
-- Mainboard: ✅ Completed (ready for manufacturing)  
-- Dock module: ✅ Prototype stage  
-- Additional modules: 🚧 In development  
-
----
-
-## 🎯 Goals
-
-- Fully open-source hardware platform  
-- Modular and expandable architecture  
-- Easy reproducibility for the community  
-- Integration with AI-driven firmware  
-
-
----
-
-## 🌐 About Keero
-
-Keero is focused on building experimental AI-driven hardware platforms that combine embedded systems with real-world interaction.
+Keero focuses on experimental AI hardware platforms that connect embedded systems with real-world interaction.
 
 ![PCBWay](./assets/pcbway.jpeg)

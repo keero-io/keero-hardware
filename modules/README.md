@@ -1,65 +1,46 @@
-# Keero Bot – Modules
+# Keero Bot Modules
 
 ![Modules](../assets/modules.png)
 
 ![Status](https://img.shields.io/badge/status-in%20development-orange)
 ![Type](https://img.shields.io/badge/system-modular-blue)
 
----
+## Overview
 
-## 🔌 Overview
+Modules extend the Keero Bot mainboard into different physical product concepts. This is a core part of the platform strategy, not an afterthought.
 
-Modules extend the functionality of the Keero Bot mainboard.
-
-The system is designed to be modular, allowing different hardware configurations depending on the use case.
-
----
-
-## 🧩 Available Modules
+## Current Module Directions
 
 ### Dock
-- Charging base
-- Development interface
-- External connectivity
+
+The dock represents the stationary side of the platform:
+
+- charging
+- development access
+- future desk or showcase experiences
 
 ### Tracks
-- Mobility system
-- Experimental movement platform
 
----
+The tracks direction represents the mobility side of the platform:
 
-## 📦 Current State
+- movement experiments
+- embodied AI demos
+- sensor-rich robotic interaction concepts
 
-At the moment, this folder contains:
+## Current State
 
-- 3D models
-- Mechanical designs
-- Early concepts
+This folder currently reflects an early modular stage with mechanical work and platform direction already visible, while electronics for some modules are still evolving.
 
-Electronics for modules will be added in future revisions.
+## Integration Philosophy
 
----
+Modules are intended to connect to the mainboard through a compact and practical interface layer that supports:
 
-## 🎯 Goals
+- power sharing
+- communication
+- docking and accessory behavior
 
-- Expand system capabilities
-- Enable docking and mobility
-- Support future hardware extensions
+The public documentation keeps that interface high level rather than exposing it as a manufacturing-ready module standard.
 
----
+## Goal
 
-## 🚧 Status
-
-- 🚧 Mechanical design in progress
-- 🚧 Electronics not yet finalized
-
----
-
-## 🔗 Integration
-
-Modules connect to the mainboard via:
-
-- Magnetic pogo pins
-- UART interface
-- Power lines
-
+The goal of the module system is to let Keero Bot become one hardware family rather than one fixed PCB demo.

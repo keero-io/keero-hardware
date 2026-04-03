@@ -1,134 +1,61 @@
-# Keero Bot – Mainboard
+# Keero Bot Mainboard
 
-The Keero Bot Mainboard is the core hardware platform of the Keero AI system.  
-It integrates processing, sensing, interaction, and power management into a single modular PCB designed for extensibility and experimentation.
-
-This board is built around the ESP32-S3 and serves as the central unit that connects all external modules such as dock, tracks, buttons, and other expansion boards.
-
----
+The Keero Bot mainboard is the core hardware platform of the Keero system. It brings together compute, sensing, interaction, power management, and module connectivity in a compact reusable board.
 
 ## Overview
 
-The mainboard combines multiple subsystems into a compact and modular design:
+The mainboard is designed to act as the hardware foundation for:
 
-- ESP32-S3 microcontroller (WROOM-1U)
-- Camera interface (OV2640)
-- OLED display interface
-- Audio input/output (microphone + speaker)
-- Haptic feedback
-- Motion sensing (accelerometer)
-- Advanced power management (LiPo + PMIC)
-- Magnetic pogo-pin interface for expansion and charging
+- AI-oriented embedded interaction
+- portable and dockable device concepts
+- future external modules such as tracks and accessories
+- repeated prototyping on top of one stable system core
 
-This makes it a complete foundation for building AI-powered embedded devices.
+## Public Feature Summary
 
----
+At a high level, the board includes:
 
-## Key Features
+- ESP32-S3 based compute
+- camera and display support
+- audio input and output
+- haptic and motion features
+- managed portable power
+- modular expansion interfaces
 
-### 🧠 Processing
-- ESP32-S3-WROOM-1U (WiFi + BLE)
-- External antenna support
-- Native USB for programming
+## Design Intent
 
-### 📷 Vision
-- OV2640 camera interface (CSI)
-- Full parallel data bus routed
+This board is not presented as a generic development breakout. It is designed as the reusable core of a broader hardware platform.
 
-### 🖥 Display
-- OLED display connector
-- Dedicated boost converter for display voltage (VPP)
+That design intent matters because it supports:
 
-### 🔊 Audio
-- I2S microphone (digital MEMS)
-- MAX98357A I2S amplifier for speaker output
+- consistent firmware growth
+- module experimentation
+- sponsor-facing hardware demos
+- future productization work
 
-### 📳 Haptics
-- DRV2605 haptic driver
-- Supports vibration motors for feedback
+## Disclosure Boundary
 
-### 📈 Motion Sensing
-- LIS2DW12 accelerometer
-- Interrupt-based motion detection
+This repository keeps the public mainboard story intentionally high level.
 
-### 🔋 Power System
-- AXP2101 PMIC
-- LiPo battery charging and management
-- Multiple regulated rails:
-  - 3.3V
-  - 2.8V
-  - 1.5V
+Publicly documented:
 
-### 🔌 Connectivity & Expansion
-- Magnetic pogo-pin interface
-  - UART communication
-  - Power delivery (charging/docking)
-- Modular headers for:
-  - Buttons
-  - Microphone
-  - Speaker
-  - External modules
+- architecture
+- subsystem roles
+- product direction
+- prototyping status
 
----
+Not publicly emphasized here as unrestricted release assets:
 
-## Architecture
-
-The board is designed as a modular hub:
-
-- Mainboard → core processing and power
-- Modules → external extensions (dock, tracks, sensors)
-
-This allows flexible system configurations depending on the use case.
-
----
-
-## Hardware Files
-
-All production and design files are included:
-
-- 📄 Schematic (PDF)
-- 🧩 PCB layout renders
-- 📦 Gerber files (for manufacturing)
-- 📋 Bill of Materials (BOM)
-- 🧭 Pick & Place files (CPL)
-- 🛠 EasyEDA source files (project export)
-
----
-
-## Manufacturing
-
-This board is designed to be manufactured using standard PCB + PCBA services.
-
-Recommended workflow:
-1. Upload Gerber files for PCB fabrication
-2. Use BOM + Pick & Place for assembly (PCBA)
-3. Source components via LCSC or equivalent
-
----
+- full manufacturing packages
+- editable design sources
+- replication-grade implementation detail
 
 ## Status
 
-- ✅ Schematic: completed  
-- ✅ PCB layout: completed  
-- 🚧 First revision: ready for manufacturing  
-- 🚧 Testing: in progress  
+- Architecture defined
+- Core board implemented
+- Prototype iteration in progress
 
----
+## License Direction
 
-## Notes
-
-- Camera reset and power-down pins are fixed due to GPIO limitations
-- Power system is fully managed via AXP2101 over I2C
-- Board is optimized for modular expansion via pogo interface
-
----
-
-## License
-
-This project is open-source hardware.
-
----
-
-## About Keero
-
-Keero Bot is an open-source modular AI hardware platform focused on combining embedded systems with interactive AI capabilities.
+Keero Bot is developed in an open-hardware spirit, but official hardware production details are shared in a more controlled way than the firmware layer.
